@@ -6,6 +6,7 @@ import Contact from './Contact';
 import PropertyList from './PropertyList';
 import PropertyDetail from './PropertyDetail';
 import { Slider } from 'antd';
+import ChatBubble from './ChatBubble';
 
 
 const { Header, Content, Footer } = Layout;
@@ -24,9 +25,9 @@ function Home() {
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
           <Menu.Item key="1">Nosotros</Menu.Item>
           <Menu.Item key="2">Contacto</Menu.Item>
-          <Menu.Item key="3">Iniciar Sesión</Menu.Item>
           <Menu.Item key="4">Inmuebles</Menu.Item>
           <Menu.Item key="5">Testimonios</Menu.Item>
+          <Menu.Item key="3">Iniciar Sesión</Menu.Item>
         </Menu>
       </Header>
       <Content>
@@ -37,11 +38,15 @@ function Home() {
           <Contact />
           <PropertyList />
         </div>
+
+
       </Content>
+      
       <Footer style={{ textAlign: 'center' }}>
         {/* Pie de página */}
         Inmobiliaria ©{new Date().getFullYear()}
       </Footer>
+      <ChatBubble />
     </Layout>
   );
 }

@@ -83,17 +83,19 @@ function AboutUs() {
                   </div>
                 </div>
               </Col>
-
             </Row>
           </Col>
           <Col span={12}>
             <div className="about-us-image-collage">
-              <img src={image1} alt="Imagen 1" className="about-us-image square-image" />
-              <img src={image2} alt="Imagen 2" className="about-us-image square-image" />
-              <img src={image3} alt="Imagen 3" className="about-us-image square-image" />
-              <img src={image4} alt="Imagen 4" className="about-us-image square-image" />
+              <div className="image-collage-row">
+                <img src={image1} alt="Imagen 1" className="about-us-image square-image" />
+                <img src={image2} alt="Imagen 2" className="about-us-image square-image" />
+              </div>
+              <div className="image-collage-row">
+                <img src={image3} alt="Imagen 3" className="about-us-image square-image" />
+                <img src={image4} alt="Imagen 4" className="about-us-image square-image" />
+              </div>
             </div>
-
           </Col>
         </Row>
       </div>
