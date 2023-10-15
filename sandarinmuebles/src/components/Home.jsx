@@ -6,9 +6,11 @@ import Contact from './Contact';
 import PropertyList from './PropertyList';
 import PropertyDetail from './PropertyDetail';
 import { Slider } from 'antd';
+import Footer from './Footer';
+import ChatBubble from './ChatBubble';
 
 
-const { Header, Content} = Layout;
+const { Header, Content } = Layout;
 
 
 const theme = {
@@ -38,12 +40,9 @@ function Home() {
           <PropertyList />
         </div>
 
-
+        <ChatBubble />
       </Content>
-      <Footer style={{ textAlign: 'center' }}>
-        {/* Pie de página */}
-        Inmobiliaria ©{new Date().getFullYear()}
-      </Footer>
+      <Footer />
     </Layout>
   );
 }
