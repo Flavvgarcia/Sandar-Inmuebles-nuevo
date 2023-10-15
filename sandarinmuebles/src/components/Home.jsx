@@ -26,6 +26,7 @@ function Home() {
           <Menu.Item key="2">Contacto</Menu.Item>
           <Menu.Item key="3">Iniciar Sesión</Menu.Item>
           <Menu.Item key="4">Inmuebles</Menu.Item>
+          <Menu.Item key="5">Testimonios</Menu.Item>
         </Menu>
       </Header>
       <Content>
