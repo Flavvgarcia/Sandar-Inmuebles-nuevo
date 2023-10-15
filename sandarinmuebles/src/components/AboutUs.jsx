@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { Layout, Typography, Row, Col } from 'antd';
+import { ApartmentOutlined, HomeOutlined } from '@ant-design/icons';
 import './AboutUs.css';
 import './Animation.css';
 
-import experienceIcon1 from '../assets/img/houses/house5.png';
-import experienceIcon2 from '../assets/img/houses/house5.png';
 import image1 from '../assets/img/houses/house5.png';
 import image2 from '../assets/img/houses/house6.png';
 import image3 from '../assets/img/houses/house7.png';
@@ -19,7 +18,7 @@ function AboutUs() {
     let currentValue = 0;
     const duration = 2000; // Duración de la animación en milisegundos
     const interval = 50; // Intervalo entre incrementos
-    const increment = (finalValue / (duration / interval));
+    const increment = finalValue / (duration / interval);
 
     const animation = setInterval(() => {
       currentValue += increment;
@@ -52,19 +51,21 @@ function AboutUs() {
         <Row gutter={32}>
           <Col span={12}>
             <Title level={2} className="about-us-title">
+              <div className="small-hr"></div>
               Sobre Nosotros
             </Title>
             <Paragraph className="about-us-paragraph">
               Somos una empresa de bienes raíces comprometida con la excelencia y la satisfacción del cliente. Nuestro equipo de profesionales tiene una amplia experiencia en el mercado inmobiliario y está aquí para ayudarte en cada paso del proceso.
             </Paragraph>
             <Title level={3} className="about-us-subtitle">
+              <div className="small-hr"></div>
               Experiencia
             </Title>
             <Row gutter={16}>
               <Col span={12}>
                 <div className="experience-statistic">
                   <div className="experience-icon">
-                    <img src={experienceIcon1} alt="Años de Experiencia" className="square-icon" />
+                    <ApartmentOutlined style={{ fontSize: '34px' }} />
                   </div>
                   <div className="experience-info">
                     <span id="experience-number">0</span>
@@ -75,7 +76,7 @@ function AboutUs() {
               <Col span={12}>
                 <div className="experience-statistic">
                   <div className="experience-icon">
-                    <img src={experienceIcon2} alt="Inmuebles Vendidos" className="square-icon" />
+                    <HomeOutlined style={{ fontSize: '34px' }} />
                   </div>
                   <div className="experience-info">
                     <span id="sales-number">0</span>
