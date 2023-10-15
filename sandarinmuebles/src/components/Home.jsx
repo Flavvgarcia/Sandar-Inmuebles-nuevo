@@ -6,9 +6,10 @@ import Contact from './Contact';
 import PropertyList from './PropertyList';
 import PropertyDetail from './PropertyDetail';
 import { Slider } from 'antd';
+import Footer from './Footer';
 
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content} = Layout;
 
 
 const theme = {
@@ -38,10 +39,9 @@ function Home() {
           <PropertyList />
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>
-        {/* Pie de página */}
-        Inmobiliaria ©{new Date().getFullYear()}
+      <Footer>
       </Footer>
+
     </Layout>
   );
 }
