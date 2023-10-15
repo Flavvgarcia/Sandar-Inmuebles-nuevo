@@ -3,6 +3,13 @@ import { Layout, Typography, Row, Col } from 'antd';
 import './AboutUs.css';
 import './Animation.css';
 
+import experienceIcon1 from '../assets/img/houses/house5.png';
+import experienceIcon2 from '../assets/img/houses/house5.png';
+import image1 from '../assets/img/houses/house5.png';
+import image2 from '../assets/img/houses/house6.png';
+import image3 from '../assets/img/houses/house7.png';
+import image4 from '../assets/img/houses/house8.png';
+
 const { Content } = Layout;
 const { Title, Paragraph } = Typography;
 
@@ -57,7 +64,7 @@ function AboutUs() {
               <Col span={12}>
                 <div className="experience-statistic">
                   <div className="experience-icon">
-                    <img src="/assets/img/houses/experience-icon-1.png" alt="Años de Experiencia" />
+                    <img src={experienceIcon1} alt="Años de Experiencia" className="square-icon" />
                   </div>
                   <div className="experience-info">
                     <span id="experience-number">0</span>
@@ -68,7 +75,7 @@ function AboutUs() {
               <Col span={12}>
                 <div className="experience-statistic">
                   <div className="experience-icon">
-                    <img src="/assets/img/houses/experience-icon-2.png" alt="Inmuebles Vendidos" />
+                    <img src={experienceIcon2} alt="Inmuebles Vendidos" className="square-icon" />
                   </div>
                   <div className="experience-info">
                     <span id="sales-number">0</span>
@@ -76,15 +83,17 @@ function AboutUs() {
                   </div>
                 </div>
               </Col>
+
             </Row>
           </Col>
           <Col span={12}>
             <div className="about-us-image-collage">
-              <img src="/assets/img/houses/image-1.jpg" alt="Imagen 1" className="about-us-image" />
-              <img src="/assets/img/houses/image-2.jpg" alt="Imagen 2" className="about-us-image" />
-              <img src="/assets/img/houses/image-3.jpg" alt="Imagen 3" className="about-us-image" />
-              <img src="/assets/img/houses/image-4.jpg" alt="Imagen 4" className="about-us-image" />
+              <img src={image1} alt="Imagen 1" className="about-us-image square-image" />
+              <img src={image2} alt="Imagen 2" className="about-us-image square-image" />
+              <img src={image3} alt="Imagen 3" className="about-us-image square-image" />
+              <img src={image4} alt="Imagen 4" className="about-us-image square-image" />
             </div>
+
           </Col>
         </Row>
       </div>

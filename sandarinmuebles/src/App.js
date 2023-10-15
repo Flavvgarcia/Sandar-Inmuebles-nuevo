@@ -6,6 +6,8 @@ import ClientDashboard from './components/ClientDashboard';
 import Login from './components/Auth/Login';
 import AboutUs from './components/AboutUs';
 import LandingPage from './components/LandingPage';
+import PropertyDetail from './components/PropertyDetail';
+import PropertyList from './components/PropertyList';
 
 
 // Crea una función que verifica el rol del usuario
@@ -52,7 +54,8 @@ function App() {
             </ClientRoute>
           }
         />
-        {/* Otras rutas */}
+        <Route exact path="/" element={<PropertyList/>} />
+        <Route path="/property/:id" element={<PropertyDetail/>} />
       </Routes>
     </Router>
   );

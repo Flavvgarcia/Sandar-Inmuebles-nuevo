@@ -2,6 +2,11 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import LandingPage from './LandingPage';
 import AboutUs from './AboutUs';
+import Contact from './Contact';
+import PropertyList from './PropertyList';
+import PropertyDetail from './PropertyDetail';
+import { Slider } from 'antd';
+
 
 const { Header, Content, Footer } = Layout;
 
@@ -28,7 +33,8 @@ function Home() {
         <div className="site-layout-content">
           <LandingPage />
           <AboutUs />
-          
+          <Contact />
+          <PropertyList />
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>

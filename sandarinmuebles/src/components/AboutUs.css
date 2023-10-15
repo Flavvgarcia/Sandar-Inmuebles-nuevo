@@ -72,3 +72,19 @@
   }
   
  
+  .small-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajusta el valor de acuerdo a tus necesidades */
+  }
+  
+  .square-image {
+    width: 200px; /* Establece el ancho deseado */
+    height: 200px; /* Establece la misma altura que el ancho para hacerla cuadrada */
+  }
+  .square-icon {
+    width: 100px; /* Establece el ancho deseado */
+    height: 100px; /* Establece la misma altura que el ancho para hacerlo cuadrado */
+  }
+  
+  
